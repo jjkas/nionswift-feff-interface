@@ -25,10 +25,11 @@ class TestLibrary(unittest.TestCase):
         pass
 
     def test_feff_cros_sections(self):
+        print(eels_analysis.__file__)
         cross_section_egerton = eels_analysis.partial_cross_section_nm2(atomic_number = 6, shell_number = 1, subshell_index = 1,
-                              edge_onset_eV = 284.2, edge_delta_eV = 25.0, beam_energy_eV = 200000.0,
+                              edge_onset_eV = 284.2, edge_delta_eV = 25.0, beam_energy_eV = 200000.0, 
                                   convergence_angle_rad = 0.01, collection_angle_rad = 0.01)
-        exit()
+       
         from nion.feff_interface import FEFF_EELS_Service
         cross_section = eels_analysis.partial_cross_section_nm2(atomic_number = 6, shell_number = 1, subshell_index = 1,
                               edge_onset_eV = 284.2, edge_delta_eV = 25.0, beam_energy_eV = 200000.0,
