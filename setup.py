@@ -15,8 +15,7 @@ setuptools.setup(
     author_email="joshua.j.kas@gmail.com",
     description="Interface between feff atomic eels pacakage and nionswift-eels-analysis.",
     url="https://github.com/jjkas/nionswift-feff-interface",
-    py_modules=['nion.feff_interface.FEFF_EELS_Service'],
-    packages=["nion.feff_interface",],
+    packages=["nionswift_plugin.feff_interface",],
     install_requires=["nionswift>=0.14.0"],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
